@@ -1,0 +1,53 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4;
+}
+
+header {
+	background-color: skyblue;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#foto {
+	border-radius: 60px;
+	width: 120px;
+	height: 120px;
+}
+
+header h1{
+	margin: 0;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 10px;
+}
+nav a:hover {
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
+}
+
+section{
+	background-color: white;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgb(0, 0, 0,  .5);
+ 	border: 0 solid #000;
+ 	border-right-width: 12px;
+}
+
+h2 {
+	color: #007BFF;
+}
+
+a{
+	color: khaki;
+}
+

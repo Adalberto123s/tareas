@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres, en este caso UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el diseño adaptable para dispositivos móviles. -->
+    <title>Formulario Ejemplo</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Vincula el archivo CSS externo con el diseño del formulario. -->
+</head>
+<body>
+        <h1>Formulario de inscripcion</h1>
+        <form  class="form-container " action="#" method="POST"> 
+            <label for="nombre"><img src="img/user.svg"> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required> 
+
+            <label for="nombre"><img src="img/mail.svg"> Electronico:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ejemplo@correo.com" required> 
+
+            <div>
+                <img src="img/curso.svg">
+                <label for="curso">Curso:</label>
+            </div>
+            <select id="curso" name="curso"> 
+                <option disabled value="-1">Selecione un curso</option>
+                <option value="0">HTML basico</option>
+                <option value="1">CSS basico</option>
+                <option value="2">JavaScript basico</option>
+                <option value="3">Fundamentos de base de datos</option>
+            </select>
+
+            <fieldset> 
+                <legend><img src="img/modalidad.svg">Modalidad de curso</legend>
+
+				<input type="radio" name="modalidad" id="online" value="0" required>
+				<label for="online">Online</label>
+		
+				<input type="radio" name="modalidad" id="presencial" value="1" required>
+				<label for="presencial">Presencial</label>
+		
+				<input type="radio" name="modalidad" id="hibrido" value="2" required>
+				<label for="hibrido">Hibrido</label>
+             </fieldset>
+
+            <fieldset>
+                <legend><img src="img/tema.svg">Temas de interés:</legend> 
+                <label for="frontend"><input type="checkbox" id="frontend" name="frontend" value="0">Frontend</label>
+                <label for="backend"><input type="checkbox" id="backend" name="backend" value="1">Backend</label> 
+                <label for="fullstack"><input type="checkbox" id="fullstack" name="fullstack" value="2">Fullstack</label> 
+            </fieldset>
+
+            <label for="mensaje">Mensajes:</label> <!-- Asocia el texto "Mensaje" al área de texto con id="mensaje". -->
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea> 
+
+            <div class="button-container">
+                <button class="button-cancelar" type="submit">Enviar</button>
+                <button class="button-enviar" type="submit">Limpiar</button>
+            </div>
+            <p>***Este pendiente a su correo, estara recibiendo un mensaje de que su registro fue valido***</p>
+        </form>
+</body>
+</html>
